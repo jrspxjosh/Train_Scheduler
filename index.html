@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedule</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="col-md-8 col-md-offset-2">
+
+  <h1 id="header"> Have to catch your Train! </h1>
+
+  <div class="panel-heading" id="trainTimingHeader"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Train Times</div>
+
+    <table id= "table" class="table">
+
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency(min)</th>
+        <th>Next Arival</th>
+        <th>Minutes Away</th>
+      </tr>
+
+
+
+
+    </table>
+
+
+  <div id="submitForm" class="panel panel-default">
+
+      <div class="panel-heading" id="formHeader"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Add Train</div>
+      <div class="panel-body">
+      <form id=formSub>
+
+        <div class="form-group">
+
+          <label for="searchTerm">Train Name</label>
+          <input type="search" class="form-control form-control-danger" id="trainName">
+          <div class="form-control-feedback"><span></span></div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="searchTerm">Destination</label>
+          <input type="search" class="form-control form-control-danger" id="destination">
+          <div class="form-control-feedback"><span></span></div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="searchTerm">First Train Time (HH:mm - military time)</label>
+          <input type="search" class="form-control form-control-danger" id="firstTrain">
+          <div class="form-control-feedback"><span></span></div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="searchTerm">Frequency (min) </label>
+          <input type="search" class="form-control form-control-danger" id="frequency">
+          <div class="form-control-feedback"><span></span></div>
+
+        </div>
+
+        <button type="search" class="btn btn-default" id="searchBtn"><i class="fa fa-search"></i> Search</button>
+        <button type="clear" class="btn btn-default" id="clearBtn"><i class="fa fa-trash"></i> Clear Results</button>
+
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

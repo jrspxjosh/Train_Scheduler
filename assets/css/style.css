@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+	border: 2px solid #purple;
+	opacity: 1;
+}
+
+body {
+	background-image: url("slc.jpg");
+	background-size: 100% 100%;
+}
+
+
+#header {
+	font-size: 50px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	font-family: 'Times New Roman', sans-serif;
+}
+
+#trainTimingHeader {
+	font-size: 20px;
+	background-color: blue;
+	color: orange;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+
+tr th {
+	font-weight: bold;
+}
+
+#table {
+	clear: both;
+	padding: 20px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
+	color: orange;
+	background-color: blue;
+}
+
+th {
+	font-weight: bold;
+}
+
+#formHeader {
+	font-size: 20px;
+	background-color: purple;
+	color: green;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+
+#submitForm {
+	margin-top: 20px;
+	color: green;
+	background-color: purple;
+}
+
+#formSub {
+	font-size: 15px;
+	font-family: 'PT Sans', sans-serif;
+}
